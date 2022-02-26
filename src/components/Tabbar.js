@@ -13,6 +13,9 @@ function Tabbar () {
       <Link to="/profile" className="tabbutton">
         Profile
       </Link>
+      <Link to="/new-page" className="tabbutton">
+        NewPage
+      </Link>
     </div>
   )
 }
