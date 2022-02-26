@@ -2,7 +2,6 @@ import { useState } from 'react';
 import './FriendList.css';
 import App from './components/App';
 import Avatar from './components/Avatar';
-import FriendlistBox from './components/FriendlistBox';
 
 function FriendList(){
   const [friends, setFriends] = useState([
@@ -15,7 +14,14 @@ function FriendList(){
   return(
     <App>
       <div className="friend-list">
-        <FriendlistBox data={friends}/>
+        {
+          friends.map((item,index) => {
+            return (<div key={index} className="friend-list-item">
+              <Avatar name={item.user}/>
+              <div className='text-user'>{item.displayName}</div>
+            </div>)
+          })
+        }
       </div>
     </App>
   )
