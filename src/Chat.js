@@ -41,7 +41,7 @@ function Chat() {
     <App>
       <Userlist />
       <div className="chat">
-        <Titlebar value="Chat"/>        
+        <Titlebar value="Chat"/>
         <Chatbox data={chatData.sort((a,b)=>a.timestamp-b.timestamp)}/>
         <Inputbox onEnter={x=>sendMsg(x,"mainhall")}/>
       </div>
