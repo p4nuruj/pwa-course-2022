@@ -2,16 +2,14 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
 import 'firebase/compat/database';
 const firebaseConfig = {
-  apiKey: "AIzaSyDOPJ9_X7MbrMXHkai922aLK2NVa7xbGjo",
-  authDomain: "gi472-pwa-course-2022.firebaseapp.com",
-  projectId: "gi472-pwa-course-2022",
-  storageBucket: "gi472-pwa-course-2022.appspot.com",
-  messagingSenderId: "967644458652",
-  appId: "1:967644458652:web:6f71ad83773786006b8759",
-  measurementId: "G-Z7Z74R200B",
-  databaseURL: "https://gi472-pwa-course-2022-default-rtdb.asia-southeast1.firebasedatabase.app"
+  apiKey: "AIzaSyBac7WRagRRzYGUgDUHwIwKpiFjDbU7U4s",
+  authDomain: "nobrain-e653d.firebaseapp.com",
+  projectId: "nobrain-e653d",
+  storageBucket: "nobrain-e653d.appspot.com",
+  messagingSenderId: "96351281480",
+  appId: "1:96351281480:web:8799c7d59442c5a68a137d",
+  measurementId: "G-KTVCBG726G"
 };
-
 firebase.initializeApp(firebaseConfig);
 
 export { firebase };
