@@ -18,18 +18,18 @@ function Chatline(props) {
       const [, name] = text.split(" ");
       fetch("https://api.agify.io/?name=" + name)
         .then(res => res.json())
-        .then(data => setElement(data.age));
+        .then(data => setElement(data.age || "Notfound"));
     }
     else if (text.startsWith("/gender")) {
       const [, name] = text.split(" ");
       fetch("https://api.genderize.io/?name=" + name)
         .then(res => res.json())
-        .then(data => setElement(data.gender));
+        .then(data => setElement(data.gender || "Notfound"));
     }
     else if (text.startsWith("/randomfact")) {
-      // ex10-01 here: Implement randomfact using fetch & promise
-      // https://uselessfacts.jsph.pl/random.json?language=en
-
+      fetch("https://uselessfacts.jsph.pl/random.json?language=en")
+      .then(res => res.json())
+      .then(data => setElement(data.text || "Notfound"));
     }
   };
 

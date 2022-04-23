@@ -3,6 +3,7 @@ import {useState} from "react";
 import './Profile.css';
 import Avatar from './components/Avatar.js';
 import { useAuthStateContext } from './context/FirebaseAuthContextProvider';
+import Titlebar from './components/Titlebar.js';
 
 function Profile() {
   const { authState, updateDisplayName, signOut } = useAuthStateContext();
@@ -16,7 +17,9 @@ function Profile() {
 
   return (
     <App>
-      <div className="Profile">
+      
+      <div className="Profile"> 
+      <Titlebar value="Profile"/> 
         <Avatar name={name}/>
         <label className="label1" htmlFor="displayname"/>
         <input 
@@ -29,6 +32,7 @@ function Profile() {
         <input type="button" value="Save" onClick={save}/>
         <input type="button" onClick={() => signOut()} value="Sign-out"/>
       </div>
+      
     </App>
   );
 }

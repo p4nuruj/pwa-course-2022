@@ -17,7 +17,7 @@ function Userlist () {
 
   return (
     <div>
-      <div className={"userlist "+tryStatus}> <div className="close-button" value ="x" onClick={onButtonClicked}>X</div><div className="tabbar">
+      <div className={"userlist "+tryStatus}> <div className="close-button" value ="x" onClick={onButtonClicked}><ion-icon name="grid-outline"></ion-icon></div><div className="tabbar">
       <Link to="/friend-list" className="tabbutton1">
       <ion-icon name="people-outline"></ion-icon>
       </Link>
