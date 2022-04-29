@@ -6,6 +6,7 @@ import Titlebar from './components/Titlebar.js';
 import './Chat.css';
 import { useChatStateContext } from './context/FirebaseChatContextProvider';
 import { useParams } from "react-router-dom";
+import React from 'react';
 
 function PrivateChat() {
   const { uid } = useParams();

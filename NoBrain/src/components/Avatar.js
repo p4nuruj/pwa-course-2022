@@ -1,4 +1,5 @@
 import '../css/Avatar.css';
+import React from 'react';
 
 function Avatar(props) {
   const base64Image = props.base64Image;

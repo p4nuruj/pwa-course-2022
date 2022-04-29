@@ -4,6 +4,7 @@ import './Profile.css';
 import Avatar from './components/Avatar.js';
 import { useChatStateContext } from './context/FirebaseChatContextProvider';
 import { useParams } from "react-router-dom";
+import React from 'react';
 
 function FriendProfile() {
   const { uid } = useParams();

@@ -3,6 +3,7 @@ import App from './components/App';
 import Avatar from './components/Avatar';
 import { useChatStateContext } from './context/FirebaseChatContextProvider';
 import { Link } from 'react-router-dom';
+import React from 'react';
 
 function FriendList(){
   const { userList, imageDict } = useChatStateContext();

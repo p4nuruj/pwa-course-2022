@@ -1,4 +1,5 @@
 import { useState } from "react";
+import React from 'react';
 
 function Inputbox (props) {
   const [value, setValue] = useState(props.value||"");

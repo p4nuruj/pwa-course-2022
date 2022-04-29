@@ -2,6 +2,7 @@ import Avatar from "./Avatar";
 import "../css/Chatbox.css";
 import { useRef, useEffect } from 'react';
 import Chatline from "./Chatline";
+import React from 'react';
 
 function Chatbox (props) {
   let data = props.data;

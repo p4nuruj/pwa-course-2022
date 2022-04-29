@@ -5,6 +5,7 @@ import Avatar from './components/Avatar.js';
 import { useAuthStateContext } from './context/FirebaseAuthContextProvider';
 import { useChatStateContext } from './context/FirebaseChatContextProvider.js';
 import FileBase64 from 'react-file-base64';
+import React from 'react';
 
 
 function Profile() {
